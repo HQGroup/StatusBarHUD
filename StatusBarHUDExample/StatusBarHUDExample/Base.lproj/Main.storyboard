@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wRt-76-43V">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xGi-cM-MGF">
+            <objects>
+                <viewController id="wRt-76-43V" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3kI-1o-mvR"/>
+                        <viewControllerLayoutGuide type="bottom" id="eNv-gN-Afa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ny4-HP-Opa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ocn-nT-48P">
+                                <rect key="frame" x="143" y="511" width="90" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPP-bb-Mgn">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="成功消息">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showSucess" destination="wRt-76-43V" eventType="touchUpInside" id="ULE-lx-OVu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="LnK-YG-cXn"/>
+                                    <constraint firstAttribute="height" constant="30" id="c2w-3d-lTM"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvO-9r-vOT">
+                                <rect key="frame" x="142" y="450" width="90" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="7OL-zn-539"/>
+                                    <constraint firstAttribute="height" constant="30" id="vwd-GU-o9C"/>
+                                </constraints>
+                                <state key="normal" title="失败消息">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showError" destination="wRt-76-43V" eventType="touchUpInside" id="aGS-Jp-uC0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzk-Kj-hj1">
+                                <rect key="frame" x="142" y="382" width="90" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Or-Qi-93H"/>
+                                    <constraint firstAttribute="width" constant="90" id="JVc-au-uPb"/>
+                                </constraints>
+                                <state key="normal" title="提示消息">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTips" destination="wRt-76-43V" eventType="touchUpInside" id="C3O-7N-KYg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drJ-sk-mgV">
+                                <rect key="frame" x="142" y="567" width="90" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="显示loading">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLoading" destination="wRt-76-43V" eventType="touchUpInside" id="Pft-3R-2I6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urt-1L-sAA">
+                                <rect key="frame" x="143" y="620" width="90" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="结束loading">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="endLoading" destination="wRt-76-43V" eventType="touchUpInside" id="1Zv-lX-8ep"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ocn-nT-48P" firstAttribute="top" secondItem="LvO-9r-vOT" secondAttribute="bottom" constant="31" id="812-K1-aQl"/>
+                            <constraint firstItem="ocn-nT-48P" firstAttribute="centerX" secondItem="ny4-HP-Opa" secondAttribute="centerX" id="EgF-bV-79a"/>
+                            <constraint firstItem="eNv-gN-Afa" firstAttribute="top" secondItem="ocn-nT-48P" secondAttribute="bottom" constant="126" id="GVO-Ky-eSZ"/>
+                            <constraint firstItem="LvO-9r-vOT" firstAttribute="centerX" secondItem="ny4-HP-Opa" secondAttribute="centerX" id="JGb-Ba-3Oq"/>
+                            <constraint firstItem="Lzk-Kj-hj1" firstAttribute="centerX" secondItem="ny4-HP-Opa" secondAttribute="centerX" id="SI2-kN-mZu"/>
+                            <constraint firstItem="LvO-9r-vOT" firstAttribute="top" secondItem="Lzk-Kj-hj1" secondAttribute="bottom" constant="38" id="Xcd-nL-d9o"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rfx-PZ-kVF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489.5" y="399.5"/>
+        </scene>
+    </scenes>
+</document>
